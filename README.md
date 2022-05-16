@@ -28,3 +28,11 @@ INNER JOIN employees
 ON dept_emp.emp_no = employees.emp_no
 INNER JOIN departments
 ON dept_emp.dept_no = departments.dept_no
+
+5)
+SELECT first_name,last_name,sex
+FROM employees
+WHERE first_name = 'Hercules'
+AND last_name LIKE 'B%'
+
+6)
