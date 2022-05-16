@@ -20,3 +20,11 @@ INNER JOIN employees
 ON dept_manager.emp_no = employees.emp_no
 INNER JOIN departments
 ON dept_manager.dept_no = departments.dept_no
+
+4)
+SELECT employees.emp_no,last_name,first_name,dept_name
+FROM dept_emp
+INNER JOIN employees
+ON dept_emp.emp_no = employees.emp_no
+INNER JOIN departments
+ON dept_emp.dept_no = departments.dept_no
