@@ -36,3 +36,12 @@ WHERE first_name = 'Hercules'
 AND last_name LIKE 'B%'
 
 6)
+SELECT employees.emp_no,last_name,first_name,dept_name
+FROM dept_emp
+INNER JOIN departments
+ON departments.dept_no = dept_emp.dept_no
+INNER JOIN employees
+ON employees.emp_no = dept_emp.emp_no
+WHERE dept_name = 'Sales'
+
+7)
